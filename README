@@ -1,0 +1,7 @@
+Python scrip parses a flat list of geocodes in a text file (copied from geographies.csv) and converts them into NMP URL's.
+ - Create the list of geocodes in a txt file prior, and place in the same directory as the script
+ - 3 flat files of URLs are created.  
+    NMP usually requires re-authentication after 5K URL's, currently there are 11.5K geocodes in geographies (Dec 2018)
+ - Run a seperate script to execute the URL's against NMP 
+ 
+ 
