@@ -3,11 +3,12 @@
  1. Download scripts NMPURLCreator.py and NMPClassAPI.py
  2. Install Python 3.X and Pandas libaries, i use https://anaconda.org/    
  3. Create the list of geocodes in a txt file prior, and place in the same directory as the script e.g (NOAM-US-WA-SEA)
- 4. Execute the script from $ NMPURLCreator.py [geocode file location] 
-   - 3 flat files containing the URLs are created in the same directory from where the script was run, with up to 5K URL's per file.  NMP usually requires re-authentication (new cookies) after 5K URL's, currently there are 11.5K geocodes in geographies (Dec 2018)
+ 4. Execute the script $ NMPURLCreator.py [geocode local file uri] 
+   - The script generates 3 flat files, each containing up to 5K URLs (in the same directory).  
+   - NMP usually requires re-authentication (new cookies) after 5K URL's, currently there are 11.5K geocodes in geographies (Dec 2018)
  6. Source .AspNet and CSRF cookies from a browser (load NMP in the browser and copy cookies from F12 /Storage/ Cookies)
  7. Run the NMPClassAPI.py [file location and name] script to query NMP using a list of URL's.  It will prompt for the cookies when run
- 8. It can 1-2hrs to fetch the JSON response from the 5K URL's, once complete a geocodes.xlsx is created
+ 8. It can take 1-2hrs to fetch the JSON response from the 5K URL's, once complete a geocodes.xlsx is created
  9. Rename the xlsx otherwise it will be overwritten, get new cookies, and run the script again against remaining geocode urls
  10. Bob's Your Uncle 
     
